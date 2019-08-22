@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link, Route } from 'react-router-dom'
+import UpdateMovie from './UpdateMovie'
 
 const MovieCard = props => {
-  const { title, director, metascore, stars } = props.movie;
+  const { title, director, metascore, stars, id } = props.movie;
   return (
     <div className="movie-card">
       <h2>{title}</h2>
